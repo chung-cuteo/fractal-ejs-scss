@@ -1,0 +1,26 @@
+{
+  "pages": [
+    {
+      "id": "top",
+      "title": "test title",
+      "discription": "test discription"
+    },
+    {
+      "id": "child",
+      "title": "child title",
+      "discription": "child discription"
+    }
+  ],
+  "nav": [
+    {
+      "id": "top",
+      "link": "test link",
+      "label": "test label"
+    },
+    {
+      "id": "child",
+      "link": "child link",
+      "label": "child label"
+    }
+  ]
+}

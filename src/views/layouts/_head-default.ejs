@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title><%= meta.title || 'No title' %></title>
+<% if (meta.keywords) { _%>
+<meta name="keywords" content="<%= meta.keywords || 'No keywords' %>">
+<% } _%>
+<meta name="description" content="<%= meta.desc || 'No description' %>">
+<% if (meta.ogp) { _%>
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="<%= meta.ogTitle || meta.title %>">
+<meta property="og:description" content="<%= meta.ogDesc || meta.desc %>">
+<meta property="og:type" content="<%= meta.ogType || 'website' %>">
+<meta property="og:url" content="<%= meta.ogUrl %>">
+<meta property="og:image" content="<%= meta.ogImage %>">
+<meta property="og:site_name" content="<%= $data.site_name %>">
+<meta property="fb:app_id" content="393013880719669">
+<% } _%>
+
+<link rel="apple-touch-icon" href="link icon">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap">
+
+<link rel="stylesheet" href="<%= page.hierarchy; %>assets/css/styles.css<%=$cacheRefresh;%>">
+<script>
+  document.createElement( "picture" );
+</script>
+<script src="<%= page.hierarchy; %>assets/js/picturefill.min.js" defer></script>
+<script src="<%= page.hierarchy; %>assets/js/bundle.js<%=$cacheRefresh;%>" defer></script>

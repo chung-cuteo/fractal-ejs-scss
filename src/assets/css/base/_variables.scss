@@ -1,0 +1,65 @@
+// ! Global variables
+// ------------------------------
+
+//## container base width
+$content-width: 1200px;
+$content-min-width: 960px;
+
+//## Colors
+
+//++ White color sets
+$white-base: #fff !default;
+
+//++ Glay color sets
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 20%) !default; // #333333
+$gray-dark: lighten($gray-base, 33.5%) !default; // #555555
+$gray: lighten($gray-base, 53.5%) !default; // #888888
+$gray-light: lighten($gray-base, 86.5%) !default; // #dddddd
+$gray-lighter: lighten($gray-base, 93.7%) !default; // #efefef
+
+//++ Brand color sets
+$brand-primary: #ca213d !default;
+// $brand-secondary:        #3BA1DD !default;
+// $brand-tertiary:         #ffffff !default;
+
+// $brand-success:          #5cb85c !default;
+// $brand-info:             #5bc0de !default;
+// $brand-warning:          #f0ad4e !default;
+// $brand-danger:           #d9534f !default;
+
+$brand-submit: #5cb85c !default;
+
+$brand-color: #ca213d !default;
+
+//** Background color
+$bg-color: $white-base !default;
+//** Dark Text color
+$text-color: #000 !default;
+//** White Text color
+$text-color_white: #fff !default;
+//** Line color
+$line-color: $gray-lighter !default;
+
+//** Link color
+$link-color: $text-color !default;
+//** Link hover color
+$link-hover-color: darken($link-color, 15%) !default;
+
+//## Typography
+
+//** Base font family
+$base-font-family: "Noto Sans JP", sans-serif !default;
+
+//** Point font family
+$point-font-family: "Roboto", sans-serif !default;
+
+//## Media query breakpoints
+
+$breakpoints: (
+  "xs": "screen and (min-width: 480px)",
+  "sm": "screen and (min-width: 640px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 1024px)",
+  "xl": "screen and (min-width: 1280px)",
+) !default;

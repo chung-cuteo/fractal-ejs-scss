@@ -1,0 +1,16 @@
+@use '@bootstrap' as *;
+
+.button {
+  display: flex;
+  width: 100%;
+
+  &--primary {
+    color: #fff;
+    background-color: #666;
+  }
+
+  &--secondary {
+    color: #fff;
+    background-color: #aaa;
+  }
+}

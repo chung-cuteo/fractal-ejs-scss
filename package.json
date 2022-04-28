@@ -1,0 +1,66 @@
+{
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "yarn watch & yarn guide",
+    "dev": "yarn development",
+    "development": "mix",
+    "prod": "yarn production",
+    "production": "mix --production",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "lint:js": "eslint --fix src/**/*.js",
+    "lint:js:fix": "eslint --fix src/**/*.js",
+    "lint:css": "stylelint 'src/**/*.scss'",
+    "lint:css:fix": "stylelint --fix 'src/**/*.scss'",
+    "hint:html": "htmlhint 'dist/**/*.html'",
+    "lint": "yarn lint:js && yarn lint:css",
+    "lint:fix": "yarn lint:js:fix && yarn lint:css:fix",
+    "test": "yarn lint && yarn hint:html",
+    "guide": "fractal start --sync",
+    "guide:build": "fractal build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && yarn lint"
+    }
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.4",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-declaration-sorter": "^6.2.2",
+    "css-mqpacker": "^7.0.0",
+    "eslint": "^8.14.0",
+    "glob": "^8.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "htmlhint": "^1.1.4",
+    "husky": "^7.0.4",
+    "import-glob-loader": "^1.1.0",
+    "laravel-mix": "^6.0.43",
+    "laravel-mix-clean": "^0.1.0",
+    "laravel-mix-ejs": "^1.1.3",
+    "patch-package": "^6.2.2",
+    "postcss": "^8.3.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^7.4.4",
+    "pretty-quick": "^3.1.3",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^12.6.0",
+    "stylelint": "^14.8.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "@frctl/fractal": "^1.5.13",
+    "core-js": "3",
+    "dotenv": "^16.0.0"
+  }
+}
